@@ -1,0 +1,114 @@
+/*Template CSS Start*/
+.bottomRight::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-top: 0px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 40px solid #fff;
+  position: absolute;
+}
+.topLeft::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-top: 15px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-right: 40px solid #fff;
+  position: absolute;
+}
+.bottomLeft::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-top: 0px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 40px solid #fff;
+  position: absolute;
+}
+
+.template2_v1 {
+  position: relative;
+}
+.template2_v1 .question {
+  text-align: center;
+  font-size: 20px;
+}
+.template2_v1 .callout {
+  position: absolute;
+  padding: 21px 10px;
+  background-color: #fff;
+  border: 2px solid #ef549f;
+  border-radius: 44px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 45px; /*! font-weight: bold; */
+  line-height: 1;
+  width: 323px;
+}
+
+.template2_v1 .itemDisable {
+  cursor: default;
+}
+
+/*Memory Game Style Start*/
+
+.memoryGame {
+  margin-top: 10px;
+  width: 950px;
+  height: 670px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+/* .memoryGameRow {
+  width: 1220px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+} */
+
+.memoryGameCard {
+  /* flex: 1; */
+  /* width: 220px;
+  height: 220px; */
+  background: #ef549f;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.memoryGameCard:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
+.memoryGameCard.flip {
+  transform: rotateY(180deg);
+}
+
+.frontImage,
+.backImage {
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  position: absolute;
+  border-radius: 5px;
+  /* background: #ef549f; */
+  backface-visibility: hidden;
+}
+
+.frontImage {
+  transform: rotateY(180deg);
+}
+
+/*Memory Game Style End*/
